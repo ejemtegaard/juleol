@@ -6,10 +6,13 @@ name = "pypi"
 [requires]
 python_version = "3.8"
 
-[dev-packages.e1839a8]
+[packages]
+pip = "==9.0.2"
+
+[packages.e1839a8]
 path = "."
 editable = true
 
-[packages.e1839a8]
+[dev-packages.e1839a8]
 path = "."
 editable = true

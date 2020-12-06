@@ -6,7 +6,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 {% extends 'base.html' %}
 
-{% block title %}Juleølsmaking result {{ participant.tasting.year }} for {{ participant.name }}{% endblock %}
+{% block title %}Julebrussmaking result {{ participant.tasting.year }} for {{ participant.name }}{% endblock %}
 
 {%block content %}
 <nav aria-label="breadcrumb bg-light">
@@ -16,7 +16,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <li class="breadcrumb-item active" aria-current="page">{{ participant.name }}</li>
   </ol>
 </nav>
-<h1 class="m-2 text-primary">Juleølsmaking result {{ participant.tasting.year }} for {{ participant.name }}</h1>
+<h1 class="m-2 text-primary">Julebrussmaking result {{ participant.tasting.year }} for {{ participant.name }}</h1>
 
 {% if participant.tasting.heats %}
 <h2 data-toggle="collapse" href="#heats" class="m-2 text-light"> <img alt="open or close section" src="/static/icons/arrow-down-circle.svg"/>Heats</h2>

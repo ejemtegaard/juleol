@@ -7,7 +7,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 {% from "_formhelper.html" import render_field %}
 {% extends 'base.html' %}
 
-{% block title %}Juleøl rate beer year {{ g.participant.tasting.year }}{% endblock %}
+{% block title %}Julebrus rate year {{ g.participant.tasting.year }}{% endblock %}
 {%block content %}
 <nav class="navbar navbar-expand-{%- if 'user_id' in session %}sm{%- else %}md{%- endif %} navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <a class="nav-item" href="/result/{{ g.participant.tasting.year }}">Results</a>
   </div>
 </nav>
-<h1 class="m-2 text-primary">Juleøl rate beer year {{ g.participant.tasting.year }}</h1>
+<h1 class="m-2 text-primary">Julebrus rate year {{ g.participant.tasting.year }}</h1>
 
 {% if g.participant.tasting.heats %}
 <h2 data-toggle="collapse" href="#heats" class="m-2 text-light"> <img alt="open or close section" src="/static/icons/arrow-down-circle.svg"/>Heats</h2>
@@ -36,7 +36,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 {% endif %}
 
 
-<h2 class="m-2 text-light" id="rating_header">Rating for beer</h2>
+<h2 class="m-2 text-light" id="rating_header">Rating for julebrus</h2>
 <form id="look">
 {{ render_field(form.look, True, type="range", step="1") }}
 </form>
@@ -210,9 +210,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
       success: function(data, textStatus, xhr) {
         $("p.error").hide();
         if(heat) {
-          $("h2#rating_header").text("Rating for beer " + (current_beer_pos + 1) + " (" + beer_number + ")");
+          $("h2#rating_header").text("Rating for julebrus " + (current_beer_pos + 1) + " (" + beer_number + ")");
         } else {
-          $("h2#rating_header").text("Rating for beer " + beer_number);
+          $("h2#rating_header").text("Rating for julebrus " + beer_number);
         };
         updating = true;
         for (let key of score_types) {

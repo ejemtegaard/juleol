@@ -9,7 +9,7 @@ services:
     environment:
       SQLALCHEMY_DATABASE_URI: "mysql+pymysql://juleol:juleol@mysql/juleol"
     ports:
-      - "127.0.0.1:5000:5000"
+      - "192.168.86.66:5000:5000"
     networks:
       - juleol
   mysql:

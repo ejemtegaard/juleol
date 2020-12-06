@@ -6,7 +6,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 {% extends 'base.html' %}
 
-{% block title %}Juleølsmaking result {{ tasting.year }}{% endblock %}
+{% block title %}Christmas Soda result {{ tasting.year }}{% endblock %}
 
 {%block content %}
 <nav aria-label="breadcrumb">
@@ -15,7 +15,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <li class="breadcrumb-item active" aria-current="page">Results {{ tasting.year }}</li>
   </ol>
 </nav>
-<h1 class="m-2 text-primary">Juleølsmaking {{ tasting.year }}</h1>
+<h1 class="m-2 text-primary">Christmas soda tasting {{ tasting.year }}</h1>
 
 <h2 data-toggle="collapse" href="#participants" class="m-2 text-light"> <img alt="open or close section" src="/static/icons/arrow-down-circle.svg"/>Participants
 </h2>
@@ -55,8 +55,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
   <thead>
   <tr>
     <th/>
-    <th>Beer</th>
-    <th>Beer number</th>
+    <th>Beverage</th>
+    <th>Beverage number</th>
     <th>Sum</th>
     <th>Average</th>
     <th>Standard deviation</th>

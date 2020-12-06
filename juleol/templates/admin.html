@@ -7,7 +7,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 {% from "_formhelper.html" import render_field %}
 {% extends 'base.html' %}
 
-{% block title %}Juleøl admin{% endblock %}
+{% block title %}Julebrus admin{% endblock %}
 {%block content %}
 <nav aria-label="breadcrumb bg-secondary">
   <ol class="breadcrumb">
@@ -15,7 +15,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <li class="breadcrumb-item active" aria-current="page">Admin</li>
   </ol>
 </nav>
-<h1 class="m-2 text-primary">Juleøl admin</h1>
+<h1 class="m-2 text-primary">Julebrus admin</h1>
 <ul class="m-2 list-group">
   {% for tasting in tastings %}
   <li class="list-group-item list-group-item-secondary"><a class="text-primary" href="/admin/{{ tasting.year }}">{{ tasting.year }}</a></li>
