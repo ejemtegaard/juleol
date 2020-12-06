@@ -128,7 +128,7 @@ echo 'GOOGLE_OAUTH_CLIENT_SECRET="XX"' >> $cfgfile
 ```
 And change flask start to
 ```
-pipenv flask run -h 127.0.0.1 --cert server.crt --key server.key
+pipenv run flask run -h 127.0.0.1 --cert server.crt --key server.key
 ```
 
 ### Running tests
